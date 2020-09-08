@@ -15,7 +15,7 @@ This workshop has the following:
     - The videos of each class are on my channnel in Spanish
     
 
-- The [slides](https://speakerdeck.com/jggomez/ktor-foundations)
+- The [slides](https://speakerdeck.com/jggomez)
 - Twitter [@jggomezt](https://twitter.com/jggomezt)
 - My Podcast [Snippets Tech](https://anchor.fm/jggomez)
 - My youtube channel [devhack](https://www.youtube.com/devhack)
