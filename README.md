@@ -13,7 +13,7 @@ This workshop has the following:
     - API REST uses clean archictecture, has many endpoints, firestore accesses, dependency injection and unit tests.
     - The website and apis have the configuration files for deployment on GCP.
     - The videos of each class are on my channnel in Spanish[devhack](https://www.youtube.com/devhack).
-    - The slides [
+    - The [slides](https://speakerdeck.com/jggomez/ktor-foundations)
 
 
 - Twitter [@jggomezt](https://twitter.com/jggomezt)
