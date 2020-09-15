@@ -10,6 +10,7 @@ This workshop has the following:
     - Websites creation with ktor. The website directory contains the examples
     - API REST complete with ktor. The API directory contains the examples.
     - API REST uses clean archictecture, has many endpoints, firestore accesses, dependency injection and unit tests.
+    - Ktor Client to consume services
     - The website and apis have the configuration files for deployment on GCP.
     - The videos of each class are on my channnel in Spanish
     
