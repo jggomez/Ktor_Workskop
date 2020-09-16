@@ -15,8 +15,8 @@ import org.spekframework.spek2.style.gherkin.Feature
 
 object PostControllerTest : Spek({
 
-    Feature("Get All Users") {
-        Scenario("Should get all users correctly") {
+    Feature("Get All Posts") {
+        Scenario("Should get all posts correctly") {
 
             lateinit var resp: TestApplicationResponse
 
@@ -24,7 +24,7 @@ object PostControllerTest : Spek({
                 // Should create users in the DB
             }
 
-            When("Get all users") {
+            When("Get all posts") {
                 withTestApplication({
                     posts()
                 }) {
@@ -43,21 +43,21 @@ object PostControllerTest : Spek({
 
             Then("Verify answers") {
                 resp shouldNotBe null
-                val successfulDTO =
+                val posts =
                     jacksonObjectMapper().readValue<List<Post>>(resp.content,
                         object : TypeReference<List<Post>?>() {})
-                successfulDTO shouldNotBe null
-                successfulDTO.size `should be greater than` 0
+                posts shouldNotBe null
+                posts.size `should be greater than` 0
             }
 
             afterScenario {
-                // delete users or data created
+                // delete posts or data created
             }
         }
     }
 
-    Feature("Register an user") {
-        Scenario("Should register an user correctly") {
+    Feature("Register a post") {
+        Scenario("Should register a post correctly") {
 
             lateinit var resp: TestApplicationResponse
             lateinit var post: Post
@@ -71,7 +71,7 @@ object PostControllerTest : Spek({
                 )
             }
 
-            When("Register an user") {
+            When("Register a post") {
                 withTestApplication({
                     posts()
                 }) {
@@ -100,7 +100,7 @@ object PostControllerTest : Spek({
             }
 
             afterScenario {
-                // delete users or data created
+                // delete post or data created
             }
         }
     }
